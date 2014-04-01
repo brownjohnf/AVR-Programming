@@ -1,10 +1,10 @@
-                                                         /* Cylon Eyes */
+/* Cylon Eyes */
 
 // ------- Preamble -------- //
 #include <avr/io.h>                        /* Defines pins, ports, etc */
 #include <util/delay.h>                     /* Functions to waste time */
 
-#define DELAYTIME 85                                   /* milliseconds */
+#define DELAYTIME 90                                   /* milliseconds */
 #define LED_PORT                PORTB
 #define LED_PIN                 PINB
 #define LED_DDR                 DDRB

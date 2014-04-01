@@ -19,7 +19,7 @@ if __name__ == "__main__":
     PORT = '/dev/ttyUSB0'
     BAUDRATE =  9600
     TIMEOUT = None
-    SCREEN_WIDTH = 80
+    SCREEN_WIDTH = 200
 
     ## Take command-line arguments to override defaults above
     import sys
