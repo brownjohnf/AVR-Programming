@@ -36,10 +36,10 @@ int main(void) {
   PORTB |= (1 << PB0);
 
   // write a 0 to confirm input is enabled
-  //DDRB |= (0 << PB4);
+  DDRB |= (0 << PB4);
 
   // enable the pull-up resistor on PB4
-  //PORTB |= (1 << PB4);
+  PORTB |= (1 << PB4);
 
   initPinChangeInterrupt();
 
@@ -55,15 +55,6 @@ int main(void) {
     } else {
       PORTB |= (1 << PB0);
     }
-
-    /* look for button press */
-    // if ((PINB & (1 << PB4)) == 0) {
-
-    //   PORTB &= ~(1 << PB0);                                   /* pressed */
-    // }
-    // else {                                              /* not pressed */
-    //   PORTB |= (1 << PB0);
-    // }
   }                                                  /* End event loop */
   return (0);                            /* This line is never reached */
 }
