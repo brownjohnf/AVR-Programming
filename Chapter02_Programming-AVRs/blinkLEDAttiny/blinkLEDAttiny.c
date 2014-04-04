@@ -1,8 +1,8 @@
-                                                       /* Blinker Demo */
+/* Defines pins, ports, etc */
+#include <avr/io.h>
 
-// ------- Preamble -------- //
-#include <avr/io.h>                        /* Defines pins, ports, etc */
-#include <util/delay.h>                     /* Functions to waste time */
+/* Functions to waste time */
+#include <util/delay.h>
 #include <avr/interrupt.h>
 #include <avr/power.h>
 
@@ -46,6 +46,7 @@ int main(void) {
   // ------ Event loop ------ //
   while (1) {
     motionCount = 0;
+    
     sei();
     _delay_ms(DELAY);
     cli();
@@ -55,6 +56,6 @@ int main(void) {
     } else {
       PORTB |= (1 << PB0);
     }
-  }                                                  /* End event loop */
-  return (0);                            /* This line is never reached */
+  }
+  return (0);
 }
