@@ -9,8 +9,8 @@
 #include "pinDefines.h"
 #include "USART.h"
 
-#define SENSE_TIME   50
-#define THRESHOLD    12000
+#define SENSE_TIME   25
+#define THRESHOLD    2000
 
 // -------  Global Variables ---------- //
 volatile uint16_t chargeCycleCount;
