@@ -3,6 +3,8 @@
 // ------- Preamble -------- //
 #include <avr/io.h>
 #include <util/delay.h>
+#include <avr/power.h>
+
 #include "pinDefines.h"
 #include "USART.h"
 
@@ -21,6 +23,7 @@ static inline void initFreerunningADC(void) {
 }
 
 int main(void) {
+  clock_prescale_set(clock_div_8);
   // -------- Inits --------- //
   initUSART();
   initFreerunningADC();

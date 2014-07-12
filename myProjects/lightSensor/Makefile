@@ -4,20 +4,20 @@
 ##########    Check these every time you start a new project    ##########
 ##########------------------------------------------------------##########
 
-MCU   = atmega168p
+MCU   = attiny85
 F_CPU = 1000000
 BAUD = 9600
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
 
 ## This is where your main() routine lives 
-MAIN = helloInterrupt.c
+MAIN = lightSensor.c
 
 ## If you've split your program into multiple .c / .h files, 
 ## include the additional source (in same directory) here 
 LOCAL_SOURCE = 
 
 ## Here you can link to one more directory (and multiple .c files)
-EXTRA_SOURCE_DIR = ../../AVR-Programming-Library
+EXTRA_SOURCE_DIR = ../../AVR-Programming-Library/
 EXTRA_SOURCE_FILES = 
 
 ##########------------------------------------------------------##########
